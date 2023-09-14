@@ -1,7 +1,18 @@
 /* Global styles
 --------------------------------------*/
+html {
+    box-sizing: border-box;
+}
+*,*:before, *:after {
+    box-sizing: inherit;
+}
 body {
-    color: #343434
+    color: #343434;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
 }
 img {
     width: 300px;
@@ -12,12 +23,35 @@ a {
 a:hover {
     text-decoration: none;
 }
+h1 {
+    font-size: 100px;
+    line-height: 1;
+    text-shadow: 10px -5px 12px rgb(238, 14, 186);   
+}
+
+h2 {
+    font-size: 45px;
+    text-shadow: 10px -5px 12px rgb(8, 189, 244); 
+       
+}
+
+h1, h2 {
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+    margin: 0;
+
+}
+.content-wrap {
+    width: 900px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
 
 
 /* Profile
 --------------------------------------*/
 header {
-    background: #2f3061;
+    background: #813781;
     color: #F7FFF7;
 }
 
@@ -29,23 +63,34 @@ header {
     background: #F7FFF7; 
 }
 .projects a {
-    color: #2f3061;
+    color: #813781;
 }
 .projects .btn {
     color: #F7FFF7;  
-    background: #2f3061;
+    background: #813781;
     text-decoration: none;
     padding: 8px;
     border-radius: 4px;
+    display: inline-block;
 }
 .projects .btn:hover {
-    background: rgba(47, 48, 97, 80%)
+    background: rgba(187, 111, 186, 0.8)
 }
-
+.project-item {
+   overflow: hidden;
+     
+}
+.project-item img {
+    float: left;
+    margin-right: 20px; 
+}
+.project-item h3 {
+    margin-top: 0;  
+}
 /* Education 
 --------------------------------------*/
 .education {
-    background: #A1C6D7
+    background: #eac5db
 }
 
 
@@ -53,6 +98,6 @@ header {
 /* Contact Info
 --------------------------------------*/
 footer {
-    background: #343434;
+    background: #813781;
     color: #F7FFF7;
 }
